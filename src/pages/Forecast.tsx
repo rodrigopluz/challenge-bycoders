@@ -15,6 +15,9 @@ import Typography from "@mui/material/Typography";
 import { getWeatherData } from "../api/getService";
 import { weatherDataState } from "../atoms/weatherState";
 
+import MaskedInput from "../componets/MaskedInput/MaskedInput";
+import Masks from "../helpers/constants/Masks";
+
 interface WeatherData {
 	latitude: string;
 	longitude: string;
@@ -30,8 +33,8 @@ const formValidation = yup.object().shape({
 });
 
 const Forecast: React.FC = () => {
-	const [latitude, setLatitude] = useState("");
-	const [longitude, setLongitude] = useState("");
+	const [latitude] = useState("");
+	const [longitude] = useState("");
 
 	const navigate = useNavigate();
 
@@ -105,9 +108,14 @@ const Forecast: React.FC = () => {
 										errors.latitude && errors.latitude.message
 									}
 									{...register("latitude", { required: true })}
-									onChange={(event) =>
-										setLatitude(event.target.value)
-									}
+									InputProps={{
+										inputComponent: MaskedInput,
+										inputProps: {
+											inputMode: "numeric",
+											mask: Masks.COORDENATE,
+											unmask: true,
+										},
+									}}
 								/>
 							)}
 						/>
@@ -128,9 +136,14 @@ const Forecast: React.FC = () => {
 										errors.longitude && errors.longitude.message
 									}
 									{...register("longitude", { required: true })}
-									onChange={(event) =>
-										setLongitude(event.target.value)
-									}
+									InputProps={{
+										inputComponent: MaskedInput,
+										inputProps: {
+											inputMode: "numeric",
+											mask: Masks.COORDENATE,
+											unmask: true,
+										},
+									}}
 								/>
 							)}
 						/>
