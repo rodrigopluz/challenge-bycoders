@@ -2,6 +2,14 @@
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![license](https://img.shields.io/apm/l/vim-mode.svg)](LICENSE)
 
+> No desafio passado, foi usado as seguintes tecnologias: Vite, React, TypeScript, Axios, MaterialUI entre outros.
+>
+> O intuito desse defasio é mostrar a previsão do tempo de localizações, informando os parametros de `Latitude` e `Longitude`, e retornando a previsão do tempo da localização informada.
+>
+> O projeto foi publicado no [Vercel](https://vercel.com/), e pode ser acessado pelo link [https://challenge-dusky.vercel.app](https://challenge-dusky.vercel.app).
+>
+> Caso queira ver o projeto rodando localmente, siga os passos abaixo.
+
 ##### Para instalar as dependências que tem no projeto, executar o comando abaixo.
 
 ```sh
