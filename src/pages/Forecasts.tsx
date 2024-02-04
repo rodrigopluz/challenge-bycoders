@@ -26,12 +26,12 @@ const Forecasts: React.FC = () => {
 				Aplicação de Previsão do Tempo
 			</Typography>
 			{localStorage.getItem("weatherData") === null
-				? weatherData.map((data) => {
+				? weatherData.map((data, key) => {
 						if (data.latitude !== "" && data.longitude !== "") {
 							return <Cards data={data as never} />;
 						} else {
 							return (
-								<Card variant="elevation">
+								<Card variant="elevation" key={key}>
 									<CardContent
 										sx={{
 											display: "flex",
