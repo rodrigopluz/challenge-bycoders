@@ -6,7 +6,7 @@
 >
 > O intuito desse defasio é mostrar a previsão do tempo de localizações, informando os parametros de `Latitude` e `Longitude`, e retornando a previsão do tempo da localização informada.
 >
-> O projeto foi publicado no [Vercel](https://vercel.com/), e pode ser acessado pelo link [https://challenge-dusky.vercel.app](https://challenge-dusky.vercel.app).
+> O projeto foi publicado no [Vercel](https://vercel.com/), e pode ser acessado pelo link [https://challenge-bycoders.vercel.app](https://challenge-bycoders.vercel.app).
 >
 > Caso queira ver o projeto rodando localmente, siga os passos abaixo.
 
