@@ -2,7 +2,7 @@
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![license](https://img.shields.io/apm/l/vim-mode.svg)](LICENSE)
 
-> No desafio passado, foi usado as seguintes tecnologias: Vite, React, TypeScript, Axios, MaterialUI entre outros.
+> No desafio passado, foi usado as seguintes tecnologias: Vite, React, TypeScript, Axios, MaterialUI, Vitest entre outros.
 >
 > O intuito desse defasio é mostrar a previsão do tempo de localizações, informando os parametros de `Latitude` e `Longitude`, e retornando a previsão do tempo da localização informada.
 >
@@ -28,6 +28,12 @@ $ yarn dev
 
 ```sh
 $ yarn build
+```
+
+##### Para executar os testes aplicados no projeto, executar o comando abaixo.
+
+```sh
+$ yarn test
 ```
 
 ##### Browser Suportados
