@@ -15,5 +15,6 @@ module.exports = {
 			{ allowConstantExport: true },
 		],
 		"no-mixed-spaces-and-tabs": 0,
+		"@typescript-eslint/no-explicit-any": "off",
 	},
 };
